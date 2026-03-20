@@ -1,0 +1,50 @@
+/* 全体の設定 */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f4f8; /* 薄いグレーブルー */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+/* ヘッダー */
+/* プロフィール画像のスタイル */
+.profile-img {
+    width: 130px;        /* 横幅を100ピクセルに指定 */
+    height: 130px;       /* 縦幅も100ピクセルに指定 */
+    border-radius: 50%; /* 正方形の角を丸くして、完全な「円」にする */
+    object-fit: cover;   /* 画像が歪まないように、枠に合わせてトリミングする */
+    margin-bottom: 10px; /* 下に少し余白を作る */
+}
+
+h1 { margin: 10px 0; font-size: 24px; }
+.tagline { color: #666; font-size: 14px; margin-bottom: 20px; }
+
+/* リンクボタン */
+.links { display: grid; gap: 15px; margin-top: 30px; }
+
+.link-card {
+    display: block;
+    padding: 15px;
+    background-color: #007bff; /* 青色（ここを好きな色に変えられます） */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.link-card:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
